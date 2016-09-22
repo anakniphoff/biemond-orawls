@@ -1588,7 +1588,7 @@ for the following resource types:
 - wls_datasource
 - wls_mail_session
 
-The way you use this, is by entering the resource name in the server_parameter
+The way you use this, is by entering the resource name in the server_parameters
 field on the wls_server type, and put the servers field to 'inherited' on the
 resource to be targeted.
 
@@ -1605,7 +1605,7 @@ Example:
       sslenabled                        => '0',
       tunnelingenabled                  => '0',
       max_message_size                  => '10000000',
-      server_parameter                  => 'WebCluster, hrDs',
+      server_parameters                 => 'WebCluster, hrDs',
     }
 
     wls_cluster { 'WebCluster':
